@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VLCircularTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z4c-QC-eEK"/>
+                        <viewControllerLayoutGuide type="bottom" id="slR-GX-OVz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFY-r1-n4a">
+                                <rect key="frame" x="102.5" y="528" width="170" height="37"/>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="K30-uY-4Qr"/>
+                                    <constraint firstAttribute="height" constant="37" id="rm4-U7-HS4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="18"/>
+                                <state key="normal" title="Sign in with Facebook">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyj-0x-aU6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gu-PN-rgx">
+                                <rect key="frame" x="116.5" y="307.5" width="142" height="52"/>
+                                <string key="text">Discover
+VLCircularTransition</string>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyA-P0-y17">
+                                <rect key="frame" x="102.5" y="585" width="170" height="37"/>
+                                <color key="backgroundColor" red="0.87450980392156863" green="0.29019607843137252" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="GgW-ho-g5I"/>
+                                    <constraint firstAttribute="width" constant="170" id="ooG-Ja-asz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="18"/>
+                                <state key="normal" title="Sign in with Google+">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="googleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f48-DK-tJV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloud1" translatesAutoresizingMaskIntoConstraints="NO" id="cH5-sa-ZHs">
+                                <rect key="frame" x="359" y="45" width="200" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5gu-PN-rgx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IUx-C3-kQf"/>
+                            <constraint firstItem="YyA-P0-y17" firstAttribute="top" secondItem="iFY-r1-n4a" secondAttribute="bottom" constant="20" id="Va1-9J-1xH"/>
+                            <constraint firstItem="slR-GX-OVz" firstAttribute="top" secondItem="YyA-P0-y17" secondAttribute="bottom" constant="45" id="Yee-P3-k05"/>
+                            <constraint firstItem="YyA-P0-y17" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hLj-Kp-WwX"/>
+                            <constraint firstItem="iFY-r1-n4a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iAi-Hl-Nwc"/>
+                            <constraint firstItem="5gu-PN-rgx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zRw-nQ-kBu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonHeightContraint" destination="rm4-U7-HS4" id="faP-iK-cVy"/>
+                        <outlet property="buttonWidthConstraint" destination="K30-uY-4Qr" id="QiH-Dk-GF5"/>
+                        <outlet property="cloudsImgView" destination="cH5-sa-ZHs" id="QGV-f6-xye"/>
+                        <outlet property="facebookButton" destination="iFY-r1-n4a" id="IoC-cp-WMm"/>
+                        <outlet property="googleButton" destination="YyA-P0-y17" id="14j-I1-FUl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.5" y="136.5"/>
+        </scene>
+        <!--Expanded Controller-->
+        <scene sceneID="Mc4-js-ZMo">
+            <objects>
+                <viewController storyboardIdentifier="ExpandedController" id="BAz-Zx-uqU" customClass="ExpandedController" customModule="VLCircularTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="poH-9m-Hjg"/>
+                        <viewControllerLayoutGuide type="bottom" id="SCK-yG-Ya4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FdB-0S-gfs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYG-D4-4OG">
+                                <rect key="frame" x="-11" y="-9" width="73" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="BAz-Zx-uqU" eventType="touchUpInside" id="33E-Pq-l4R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSD-9u-AoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="655.5" y="126.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud1" width="994" height="645"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
