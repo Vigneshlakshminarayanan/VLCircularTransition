@@ -27,7 +27,7 @@ Set the required callback for presenting ViewController
         
     }
     
-    ```
+```
     
 Set the required callback for dismissing ViewController
 
@@ -41,7 +41,6 @@ Set the required callback for dismissing ViewController
         
         return transition
     }
-    
   ```
 
 ## Installation
