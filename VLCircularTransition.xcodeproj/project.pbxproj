@@ -378,6 +378,7 @@
 				1B99BD2F1E7BDE4000D45FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
