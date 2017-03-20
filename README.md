@@ -43,13 +43,13 @@ Set the required callback for dismissing ViewController
     }
   ```
 
-## Installation
+## Requirements
 
-Can be a Direct Download or Cloning.
+iOS 9 or later.
 
 ## Contributors
 
-- Vignesh Lakshminarayanan
+- Vignesh Lakshminarayanan; Email: its.vigneshere@gmail.com
 
 ## Licence
 
