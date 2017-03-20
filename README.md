@@ -1,5 +1,5 @@
 # VLCircularTransition
-ViewController Circular Transition
+Circular ViewController Transition
 
 ## Synopsis
 
