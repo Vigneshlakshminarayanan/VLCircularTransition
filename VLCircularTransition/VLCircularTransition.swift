@@ -16,7 +16,6 @@ class VLCircularTransition:NSObject{
             circle.center = startingPoint
         }
     }
-    
     var circleColor = UIColor.white
     var duration = 0.3
     

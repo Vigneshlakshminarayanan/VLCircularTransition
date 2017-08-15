@@ -11,20 +11,15 @@ import UIKit
 class ExpandedController: UIViewController {
     
     @IBAction func closeButtonTapped(_ sender: Any) {
-        
         self.dismiss(animated: true, completion: nil)
     }
-    
     var viewBgColor = UIColor()
-   
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.view.backgroundColor = viewBgColor
     }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

@@ -15,17 +15,14 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
     @IBOutlet var cloudLeadingMargin: NSLayoutConstraint!
     @IBOutlet var buttonWidthConstraint: NSLayoutConstraint!
     @IBOutlet var buttonHeightContraint: NSLayoutConstraint!
-    
     @IBOutlet var facebookButton: UIButton!
     @IBOutlet var googleButton: UIButton!
     
     let transition = VLCircularTransition()
     var buttonCenter = CGPoint.zero
     
-    
     var initialWidthConstraint = NSLayoutConstraint()
     var initialHeightConstraint = NSLayoutConstraint()
-
     
     @IBAction func googleButtonTapped(_ sender: Any) {
         
@@ -42,22 +39,18 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
     }
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.init(patternImage: #imageLiteral(resourceName: "appBg"))
         storeInitialConstraintPosition()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
         animateClouds()
     }
     
     func callSegueAfter5Seconds(button:UIButton){
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
-            
-            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let expandedViewController = storyboard.instantiateViewController(withIdentifier: "ExpandedController") as! ExpandedController
             
@@ -73,16 +66,11 @@ class ViewController: UIViewController,UIViewControllerTransitioningDelegate {
     func storeInitialConstraintPosition(){
         
         for constraint in facebookButton.constraints{
-            
             if (constraint.firstAttribute == .height){
                 initialWidthConstraint.constant = 37
             }else if (constraint.firstAttribute == .width){
                 initialHeightConstraint.constant = 170
             }
         }
-        
-        
     }
-    
 }
-
